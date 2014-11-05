@@ -59,10 +59,10 @@ function initialize()
       /* end new code for shaded area */
 
       /* new code for Chicago Wards */
-      var ctaLayer = new google.maps.KmlLayer({
-        url: 'http://cep-districts.herokuapp.com/public/assets/ChicagoWards.kml'
+      var wardLayers = new google.maps.KmlLayer({
+        driveFileId: "0B60CKhVJ_wmkX0E4cjJJOEhpa1E"
       });
-      ctaLayer.setMap(map);
+      wardLayers.setMap(map);
       /* end new code for Chicago Wards */
     }
     else
