@@ -60,7 +60,9 @@ function initialize()
 
       /* new code for Chicago Wards */
       var wardLayers = new google.maps.KmlLayer({
-        driveFileId: "0B60CKhVJ_wmkX0E4cjJJOEhpa1E"
+        //driveFileId: "0B60CKhVJ_wmkX0E4cjJJOEhpa1E"
+        url: 'http://cep-districts.herokuapp.com/ChicagoWards.kml'
+        //<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?q=docs:%2F%2F0B60CKhVJ_wmkX0E4cjJJOEhpa1E&output=embed"></iframe><br /><small><a href="http://maps.google.com/maps?q=docs:%2F%2F0B60CKhVJ_wmkX0E4cjJJOEhpa1E" style="color:#0000FF;text-align:left">View Larger Map</a></small>
       });
       wardLayers.setMap(map);
       /* end new code for Chicago Wards */
