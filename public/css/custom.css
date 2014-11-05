@@ -1,0 +1,35 @@
+.center-div
+{
+  margin: 0 auto;
+  width: 80%;
+}
+
+.rounded-outline
+{
+  border-style: solid;
+  border-width: 1px;
+  border-color: #A0A0A0;
+  border-radius: 10px;
+}
+
+a
+{
+  color: #FFF;
+}
+
+a:hover
+{
+  color: #FFF;
+  text-decoration: none;
+}
+
+a.simple-link
+{
+  color: #000;
+}
+
+a:hover.simple-link
+{
+  color: #000;
+  text-decoration: underline;
+}
