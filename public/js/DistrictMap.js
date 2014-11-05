@@ -45,6 +45,7 @@ function initialize()
       addTaxSite(map,new google.maps.LatLng(39.788367, -89.646304),"Springfield","888");
 
       /* new code for shaded area */
+      /*
       var rectangle = new google.maps.Rectangle({
         strokeColor: '#FF0000',
         strokeOpacity: 0.8,
@@ -54,7 +55,15 @@ function initialize()
         map: map,
         bounds: results[0].geometry.bounds
       });
+      */
       /* end new code for shaded area */
+
+      /* new code for Chicago Wards */
+      var ctaLayer = new google.maps.KmlLayer({
+        url: 'http://cep-districts.herokuapp.com/public/assets/ChicagoWards.kml'
+      });
+      ctaLayer.setMap(map);
+      /* end new code for Chicago Wards */
     }
     else
     {
