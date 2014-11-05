@@ -14,20 +14,17 @@ function addTaxSite(map, latLng, siteTitle, numClients) {
 
 function initialize()
 {
-  var latitude = NaN;
-  var longitude = NaN;
   var address = '60661';
   var geocoder = new google.maps.Geocoder();
   geocoder.geocode( { 'address': address}, function(results, status)
   {
     if (status == google.maps.GeocoderStatus.OK)
     {
-      latitude = results[0].geometry.location.lat();
-      longitude = results[0].geometry.location.lng();
-      //alert('Latitude: ' + latitude.toString() + ' Longitude: ' + longitude.toString());
+      //alert('Latitude: ' + results[0].geometry.location.lat().toString() + ' Longitude: ' + results[0].geometry.location.lng().toString());
+      //alert('Bounds: ' + results[0].geometry.bounds.toString());
       var mapOptions =
       {
-        center: { lat: latitude, lng: longitude },
+        center: results[0].geometry.location,
         zoom: 8
       };
       var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
@@ -46,6 +43,18 @@ function initialize()
       //addTaxSite(map,new google.maps.LatLng(41.750761, -87.653492),"Lake County","740");
       //addTaxSite(map,new google.maps.LatLng(41.750761, -87.653492),"West Chicago","0 (New 2015 site)");
       addTaxSite(map,new google.maps.LatLng(39.788367, -89.646304),"Springfield","888");
+
+      /* new code for shaded area */
+      var rectangle = new google.maps.Rectangle({
+        strokeColor: '#FF0000',
+        strokeOpacity: 0.8,
+        strokeWeight: 2,
+        fillColor: '#FF0000',
+        fillOpacity: 0.35,
+        map: map,
+        bounds: results[0].geometry.bounds
+      });
+      /* end new code for shaded area */
     }
     else
     {
