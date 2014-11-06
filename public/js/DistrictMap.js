@@ -22,12 +22,36 @@ function initialize()
     {
       //alert('Latitude: ' + results[0].geometry.location.lat().toString() + ' Longitude: ' + results[0].geometry.location.lng().toString());
       //alert('Bounds: ' + results[0].geometry.bounds.toString());
+      var styles = [
+        {
+          stylers: [
+            { hue: "#00ff66" },
+            { saturation: -20 }
+          ]
+        },{
+          //featureType: "road",
+          //elementType: "geometry",
+          stylers: [
+            { lightness: 100 },
+            { visibility: "simplified" }
+          ]
+        },{
+          //featureType: "road",
+          //elementType: "labels",
+          stylers: [
+            { visibility: "off" }
+          ]
+        }
+      ];
+      var styledMap = new google.maps.StyledMapType(styles, { named: "Styled Map"});
       var mapOptions =
       {
         center: results[0].geometry.location,
-        zoom: 8
+        zoom: 8,
       };
       var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+      map.mapTypes.set('map_style', styledMap);
+      map.setMapTypeId('map_style');
       addTaxSite(map,new google.maps.LatLng(41.750761, -87.653492),"Auburn Gresham","1206");
       addTaxSite(map,new google.maps.LatLng(41.811897, -87.707734),"Brighton Park","328");
       addTaxSite(map,new google.maps.LatLng(41.823083, -87.625810),"Bronzeville","1263");
