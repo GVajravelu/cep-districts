@@ -804,11 +804,11 @@
 		</Style>
 		<Style id='poly-FFCC00-3-64'>
 			<LineStyle>
-				<color>ff00CCFF</color>
-				<width>3</width>
+				<color>ff3F3F3F</color>
+				<width>1</width>
 			</LineStyle>
 			<PolyStyle>
-				<color>4000CCFF</color>
+				<color>ff0000FF</color>
 				<fill>1</fill>
 				<outline>1</outline>
 			</PolyStyle>
