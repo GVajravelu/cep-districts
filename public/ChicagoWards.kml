@@ -3,7 +3,7 @@
 	<Document>
 		<name>Untitled layer</name>
 		<Placemark>
-			<styleUrl>#poly-3333FF-3-64</styleUrl>
+			<styleUrl>#poly-FFFFFF-3-64</styleUrl>
 			<name>Ward 2</name>
 			<ExtendedData>
 			</ExtendedData>
@@ -17,7 +17,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<styleUrl>#poly-FF6600-3-64</styleUrl>
+			<styleUrl>#poly-FFFFFF-3-64</styleUrl>
 			<name>Ward 3</name>
 			<ExtendedData>
 			</ExtendedData>
@@ -31,7 +31,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<styleUrl>#poly-FF0000-3-64</styleUrl>
+			<styleUrl>#poly-FFFFFF-3-64</styleUrl>
 			<name>Ward 4</name>
 			<ExtendedData>
 			</ExtendedData>
@@ -45,7 +45,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<styleUrl>#poly-3333FF-3-64</styleUrl>
+			<styleUrl>#poly-FFFFFF-3-64</styleUrl>
 			<name>Ward 5</name>
 			<ExtendedData>
 			</ExtendedData>
@@ -59,7 +59,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<styleUrl>#poly-6600CC-3-64</styleUrl>
+			<styleUrl>#poly-FFFFFF-3-64</styleUrl>
 			<name>Ward 6</name>
 			<ExtendedData>
 			</ExtendedData>
@@ -73,7 +73,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<styleUrl>#poly-009900-3-64</styleUrl>
+			<styleUrl>#poly-FFFFFF-3-64</styleUrl>
 			<name>Ward 7</name>
 			<ExtendedData>
 			</ExtendedData>
@@ -87,7 +87,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<styleUrl>#poly-FF0000-3-64</styleUrl>
+			<styleUrl>#poly-FFFFFF-3-64</styleUrl>
 			<name>Ward 8</name>
 			<ExtendedData>
 			</ExtendedData>
@@ -101,7 +101,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<styleUrl>#poly-FFCC00-3-64</styleUrl>
+			<styleUrl>#poly-FFFFFF-3-64</styleUrl>
 			<name>Ward 9</name>
 			<ExtendedData>
 			</ExtendedData>
@@ -115,7 +115,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<styleUrl>#poly-6600CC-3-64</styleUrl>
+			<styleUrl>#poly-FFFFFF-3-64</styleUrl>
 			<name>Ward 10</name>
 			<ExtendedData>
 			</ExtendedData>
@@ -129,7 +129,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<styleUrl>#poly-009900-3-64</styleUrl>
+			<styleUrl>#poly-FFFFFF-3-64</styleUrl>
 			<name>Ward 11</name>
 			<ExtendedData>
 			</ExtendedData>
@@ -143,7 +143,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<styleUrl>#poly-3333FF-3-64</styleUrl>
+			<styleUrl>#poly-FFFFFF-3-64</styleUrl>
 			<name>Ward 12</name>
 			<ExtendedData>
 			</ExtendedData>
@@ -157,7 +157,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<styleUrl>#poly-FFCC00-3-64</styleUrl>
+			<styleUrl>#poly-FFFFFF-3-64</styleUrl>
 			<name>Ward 13</name>
 			<ExtendedData>
 			</ExtendedData>
@@ -171,7 +171,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<styleUrl>#poly-FF0000-3-64</styleUrl>
+			<styleUrl>#poly-FFFFFF-3-64</styleUrl>
 			<name>Ward 14</name>
 			<ExtendedData>
 			</ExtendedData>
@@ -185,7 +185,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<styleUrl>#poly-FF6600-3-64</styleUrl>
+			<styleUrl>#poly-FFFFFF-3-64</styleUrl>
 			<name>Ward 15</name>
 			<ExtendedData>
 			</ExtendedData>
@@ -199,7 +199,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<styleUrl>#poly-009900-3-64</styleUrl>
+			<styleUrl>#poly-FFFFFF-3-64</styleUrl>
 			<name>Ward 16</name>
 			<ExtendedData>
 			</ExtendedData>
@@ -213,7 +213,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<styleUrl>#poly-FF0000-3-64</styleUrl>
+			<styleUrl>#poly-FFFFFF-3-64</styleUrl>
 			<name>Ward 17</name>
 			<ExtendedData>
 			</ExtendedData>
@@ -227,7 +227,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<styleUrl>#poly-3333FF-3-64</styleUrl>
+			<styleUrl>#poly-FFFFFF-3-64</styleUrl>
 			<name>Ward 18</name>
 			<ExtendedData>
 			</ExtendedData>
@@ -241,7 +241,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<styleUrl>#poly-FF0000-3-64</styleUrl>
+			<styleUrl>#poly-FFFFFF-3-64</styleUrl>
 			<name>Ward 19</name>
 			<ExtendedData>
 			</ExtendedData>
@@ -255,7 +255,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<styleUrl>#poly-FFCC33-3-64</styleUrl>
+			<styleUrl>#poly-FFFFFF-3-64</styleUrl>
 			<name>Ward 20</name>
 			<ExtendedData>
 			</ExtendedData>
@@ -269,7 +269,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<styleUrl>#poly-009900-3-64</styleUrl>
+			<styleUrl>#poly-FFFFFF-3-64</styleUrl>
 			<name>Ward 21</name>
 			<ExtendedData>
 			</ExtendedData>
@@ -283,7 +283,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<styleUrl>#poly-FFCC00-3-64</styleUrl>
+			<styleUrl>#poly-FFFFFF-3-64</styleUrl>
 			<name>Ward 22</name>
 			<ExtendedData>
 			</ExtendedData>
@@ -297,7 +297,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<styleUrl>#poly-6600CC-3-64</styleUrl>
+			<styleUrl>#poly-FFFFFF-3-64</styleUrl>
 			<name>Ward 23</name>
 			<ExtendedData>
 			</ExtendedData>
@@ -311,7 +311,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<styleUrl>#poly-CC33CC-3-64</styleUrl>
+			<styleUrl>#poly-FFFFFF-3-64</styleUrl>
 			<name>Ward 25</name>
 			<ExtendedData>
 			</ExtendedData>
@@ -325,7 +325,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<styleUrl>#poly-0000FF-3-64</styleUrl>
+			<styleUrl>#poly-FFFFFF-3-64</styleUrl>
 			<name>Ward 34</name>
 			<ExtendedData>
 			</ExtendedData>
@@ -339,7 +339,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<styleUrl>#poly-FF6600-3-64</styleUrl>
+			<styleUrl>#poly-FFFFFF-3-64</styleUrl>
 			<name>Ward 1</name>
 			<ExtendedData>
 			</ExtendedData>
@@ -353,7 +353,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<styleUrl>#poly-FF0000-3-64</styleUrl>
+			<styleUrl>#poly-FFFFFF-3-64</styleUrl>
 			<name>Ward 24</name>
 			<ExtendedData>
 			</ExtendedData>
@@ -367,7 +367,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<styleUrl>#poly-FF0000-3-64</styleUrl>
+			<styleUrl>#poly-FFFFFF-3-64</styleUrl>
 			<name>Ward 26</name>
 			<ExtendedData>
 			</ExtendedData>
@@ -381,7 +381,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<styleUrl>#poly-009900-3-64</styleUrl>
+			<styleUrl>#poly-FFFFFF-3-64</styleUrl>
 			<name>Ward 27</name>
 			<ExtendedData>
 			</ExtendedData>
@@ -395,7 +395,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<styleUrl>#poly-FF6600-3-64</styleUrl>
+			<styleUrl>#poly-FFFFFF-3-64</styleUrl>
 			<name>Ward 28</name>
 			<ExtendedData>
 			</ExtendedData>
@@ -409,7 +409,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<styleUrl>#poly-009900-3-64</styleUrl>
+			<styleUrl>#poly-FFFFFF-3-64</styleUrl>
 			<name>Ward 29</name>
 			<ExtendedData>
 			</ExtendedData>
@@ -423,7 +423,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<styleUrl>#poly-FFCC33-3-64</styleUrl>
+			<styleUrl>#poly-FFFFFF-3-64</styleUrl>
 			<name>Ward 30</name>
 			<ExtendedData>
 			</ExtendedData>
@@ -437,7 +437,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<styleUrl>#poly-FF6600-3-64</styleUrl>
+			<styleUrl>#poly-FFFFFF-3-64</styleUrl>
 			<name>Ward 31</name>
 			<ExtendedData>
 			</ExtendedData>
@@ -451,7 +451,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<styleUrl>#poly-3333FF-3-64</styleUrl>
+			<styleUrl>#poly-FFFFFF-3-64</styleUrl>
 			<name>Ward 32</name>
 			<ExtendedData>
 			</ExtendedData>
@@ -465,7 +465,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<styleUrl>#poly-FF0000-3-64</styleUrl>
+			<styleUrl>#poly-FFFFFF-3-64</styleUrl>
 			<name>Ward 33</name>
 			<ExtendedData>
 			</ExtendedData>
@@ -479,7 +479,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<styleUrl>#poly-6600CC-3-64</styleUrl>
+			<styleUrl>#poly-FFFFFF-3-64</styleUrl>
 			<name>Ward 35</name>
 			<ExtendedData>
 			</ExtendedData>
@@ -493,7 +493,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<styleUrl>#poly-FF0000-3-64</styleUrl>
+			<styleUrl>#poly-FFFFFF-3-64</styleUrl>
 			<name>Ward 36</name>
 			<ExtendedData>
 			</ExtendedData>
@@ -507,7 +507,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<styleUrl>#poly-3333FF-3-64</styleUrl>
+			<styleUrl>#poly-FFFFFF-3-64</styleUrl>
 			<name>Ward 37</name>
 			<ExtendedData>
 			</ExtendedData>
@@ -521,7 +521,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<styleUrl>#poly-6600CC-3-64</styleUrl>
+			<styleUrl>#poly-FFFFFF-3-64</styleUrl>
 			<name>Ward 38</name>
 			<ExtendedData>
 			</ExtendedData>
@@ -535,7 +535,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<styleUrl>#poly-3333FF-3-64</styleUrl>
+			<styleUrl>#poly-FFFFFF-3-64</styleUrl>
 			<name>Ward 39</name>
 			<ExtendedData>
 			</ExtendedData>
@@ -549,7 +549,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<styleUrl>#poly-6600CC-3-64</styleUrl>
+			<styleUrl>#poly-FFFFFF-3-64</styleUrl>
 			<name>Ward 40</name>
 			<ExtendedData>
 			</ExtendedData>
@@ -563,7 +563,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<styleUrl>#poly-FFCC00-3-64</styleUrl>
+			<styleUrl>#poly-FFFFFF-3-64</styleUrl>
 			<name>Ward 41</name>
 			<ExtendedData>
 			</ExtendedData>
@@ -578,7 +578,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<styleUrl>#poly-FFCC00-3-64</styleUrl>
+			<styleUrl>#poly-FFFFFF-3-64</styleUrl>
 			<name>Ward 42</name>
 			<ExtendedData>
 			</ExtendedData>
@@ -592,7 +592,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<styleUrl>#poly-FF0000-3-64</styleUrl>
+			<styleUrl>#poly-FFFFFF-3-64</styleUrl>
 			<name>Ward 43</name>
 			<ExtendedData>
 			</ExtendedData>
@@ -606,7 +606,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<styleUrl>#poly-6600CC-3-64</styleUrl>
+			<styleUrl>#poly-FFFFFF-3-64</styleUrl>
 			<name>Ward 44</name>
 			<ExtendedData>
 			</ExtendedData>
@@ -620,7 +620,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<styleUrl>#poly-33CC00-3-64</styleUrl>
+			<styleUrl>#poly-FFFFFF-3-64</styleUrl>
 			<name>Ward 45</name>
 			<ExtendedData>
 			</ExtendedData>
@@ -634,7 +634,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<styleUrl>#poly-FFCC33-3-64</styleUrl>
+			<styleUrl>#poly-FFFFFF-3-64</styleUrl>
 			<name>Ward 46</name>
 			<ExtendedData>
 			</ExtendedData>
@@ -648,7 +648,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<styleUrl>#poly-33CC00-3-64</styleUrl>
+			<styleUrl>#poly-FFFFFF-3-64</styleUrl>
 			<name>Ward 47</name>
 			<ExtendedData>
 			</ExtendedData>
@@ -662,7 +662,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<styleUrl>#poly-3366FF-3-64</styleUrl>
+			<styleUrl>#poly-FFFFFF-3-64</styleUrl>
 			<name>Ward 48</name>
 			<ExtendedData>
 			</ExtendedData>
@@ -676,7 +676,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<styleUrl>#poly-FF0000-3-64</styleUrl>
+			<styleUrl>#poly-FFFFFF-3-64</styleUrl>
 			<name>Ward 49</name>
 			<ExtendedData>
 			</ExtendedData>
@@ -690,7 +690,7 @@
 			</Polygon>
 		</Placemark>
 		<Placemark>
-			<styleUrl>#poly-FFCC33-3-64</styleUrl>
+			<styleUrl>#poly-FFFFFF-3-64</styleUrl>
 			<name>Ward 50</name>
 			<ExtendedData>
 			</ExtendedData>
@@ -703,123 +703,13 @@
 				</outerBoundaryIs>
 			</Polygon>
 		</Placemark>
-		<Style id='poly-0000FF-3-64'>
+		<Style id='poly-FFFFFF-3-64'>
 			<LineStyle>
-				<color>ffFF0000</color>
-				<width>3</width>
-			</LineStyle>
-			<PolyStyle>
-				<color>40FF0000</color>
-				<fill>1</fill>
-				<outline>1</outline>
-			</PolyStyle>
-		</Style>
-		<Style id='poly-009900-3-64'>
-			<LineStyle>
-				<color>ff009900</color>
-				<width>3</width>
-			</LineStyle>
-			<PolyStyle>
-				<color>40009900</color>
-				<fill>1</fill>
-				<outline>1</outline>
-			</PolyStyle>
-		</Style>
-		<Style id='poly-3333FF-3-64'>
-			<LineStyle>
-				<color>ffFF3333</color>
-				<width>3</width>
-			</LineStyle>
-			<PolyStyle>
-				<color>40FF3333</color>
-				<fill>1</fill>
-				<outline>1</outline>
-			</PolyStyle>
-		</Style>
-		<Style id='poly-3366FF-3-64'>
-			<LineStyle>
-				<color>ffFF6633</color>
-				<width>3</width>
-			</LineStyle>
-			<PolyStyle>
-				<color>40FF6633</color>
-				<fill>1</fill>
-				<outline>1</outline>
-			</PolyStyle>
-		</Style>
-		<Style id='poly-33CC00-3-64'>
-			<LineStyle>
-				<color>ff00CC33</color>
-				<width>3</width>
-			</LineStyle>
-			<PolyStyle>
-				<color>4000CC33</color>
-				<fill>1</fill>
-				<outline>1</outline>
-			</PolyStyle>
-		</Style>
-		<Style id='poly-6600CC-3-64'>
-			<LineStyle>
-				<color>ffCC0066</color>
-				<width>3</width>
-			</LineStyle>
-			<PolyStyle>
-				<color>40CC0066</color>
-				<fill>1</fill>
-				<outline>1</outline>
-			</PolyStyle>
-		</Style>
-		<Style id='poly-CC33CC-3-64'>
-			<LineStyle>
-				<color>ffCC33CC</color>
-				<width>3</width>
-			</LineStyle>
-			<PolyStyle>
-				<color>40CC33CC</color>
-				<fill>1</fill>
-				<outline>1</outline>
-			</PolyStyle>
-		</Style>
-		<Style id='poly-FF0000-3-64'>
-			<LineStyle>
-				<color>ff0000FF</color>
-				<width>3</width>
-			</LineStyle>
-			<PolyStyle>
-				<color>400000FF</color>
-				<fill>1</fill>
-				<outline>1</outline>
-			</PolyStyle>
-		</Style>
-		<Style id='poly-FF6600-3-64'>
-			<LineStyle>
-				<color>ff0066FF</color>
-				<width>3</width>
-			</LineStyle>
-			<PolyStyle>
-				<color>400066FF</color>
-				<fill>1</fill>
-				<outline>1</outline>
-			</PolyStyle>
-		</Style>
-		<Style id='poly-FFCC00-3-64'>
-			<LineStyle>
-				<color>ff3F3F3F</color>
+				<color>ffFFFFFF</color>
 				<width>1</width>
 			</LineStyle>
 			<PolyStyle>
-				<color>ff0000FF</color>
-				<fill>1</fill>
-				<outline>1</outline>
-			</PolyStyle>
-		</Style>
-		<Style id='poly-FFCC33-3-64'>
-			<LineStyle>
-				<color>ff33CCFF</color>
-				<width>3</width>
-			</LineStyle>
-			<PolyStyle>
-				<color>4033CCFF</color>
+				<color>ffFF8000</color>
 				<fill>1</fill>
 				<outline>1</outline>
 			</PolyStyle>
