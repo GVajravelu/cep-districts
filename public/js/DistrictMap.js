@@ -1,16 +1,15 @@
-function addTaxSite(map, latLng, siteTitle, numClients) {
-  var marker = new google.maps.Marker({
-    position: latLng,
-    map: map,
-    title: siteTitle
-  });
-  var infoWindow = new google.maps.InfoWindow({
-    content: '<h4>' + siteTitle + '</h4> <h5>Clients: ' + numClients + '</h5>'
-  });
-  google.maps.event.addListener(marker, 'click', function() {
-    infoWindow.open(map,marker);
-  });
+/*
+function showInContentWindow(map, position, text)
+{
+  var content = "<div>" + text + "</div>";
+  var infowindow = new google.maps.InfoWindow({
+    content: content,
+    position: position,
+    pixelOffset: new google.maps.Size(300,0),
+  })
+  infowindow.open(map);
 }
+*/
 
 function initialize()
 {
@@ -52,44 +51,21 @@ function initialize()
       var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
       map.mapTypes.set('map_style', styledMap);
       map.setMapTypeId('map_style');
-      addTaxSite(map,new google.maps.LatLng(41.750761, -87.653492),"Auburn Gresham","1206");
-      addTaxSite(map,new google.maps.LatLng(41.811897, -87.707734),"Brighton Park","328");
-      addTaxSite(map,new google.maps.LatLng(41.823083, -87.625810),"Bronzeville","1263");
-      addTaxSite(map,new google.maps.LatLng(41.854686, -87.714431),"Lawndale","662");
-      addTaxSite(map,new google.maps.LatLng(41.886259, -87.626778),"Loop","4036");
-      addTaxSite(map,new google.maps.LatLng(41.845863, -87.684122),"Pilsen","1118");
-      addTaxSite(map,new google.maps.LatLng(41.964811, -87.658816),"Uptown","3556");
-      addTaxSite(map,new google.maps.LatLng(41.758685, -88.317071),"Aurora","902");
-      //addTaxSite(map,new google.maps.LatLng(41.750761, -87.653492),"South Suburbs","576");
-      addTaxSite(map,new google.maps.LatLng(42.042935, -88.287852),"Elgin","1556");
-      addTaxSite(map,new google.maps.LatLng(42.048615, -87.679974),"Evanston","405");
-      addTaxSite(map,new google.maps.LatLng(41.533601, -88.097103),"Joliet","648");
-      //addTaxSite(map,new google.maps.LatLng(41.750761, -87.653492),"Lake County","740");
-      //addTaxSite(map,new google.maps.LatLng(41.750761, -87.653492),"West Chicago","0 (New 2015 site)");
-      addTaxSite(map,new google.maps.LatLng(39.788367, -89.646304),"Springfield","888");
 
-      /* new code for shaded area */
-      /*
-      var rectangle = new google.maps.Rectangle({
-        strokeColor: '#FF0000',
-        strokeOpacity: 0.8,
-        strokeWeight: 2,
-        fillColor: '#FF0000',
-        fillOpacity: 0.35,
-        map: map,
-        bounds: results[0].geometry.bounds
-      });
-      */
-      /* end new code for shaded area */
-
-      /* new code for Chicago Wards */
+      /* code for Chicago Wards */
       var wardLayers = new google.maps.KmlLayer({
-        //driveFileId: "0B60CKhVJ_wmkX0E4cjJJOEhpa1E"
         url: 'http://cep-districts.herokuapp.com/ChicagoWards.kml'
-        //<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?q=docs:%2F%2F0B60CKhVJ_wmkX0E4cjJJOEhpa1E&output=embed"></iframe><br /><small><a href="http://maps.google.com/maps?q=docs:%2F%2F0B60CKhVJ_wmkX0E4cjJJOEhpa1E" style="color:#0000FF;text-align:left">View Larger Map</a></small>
       });
       wardLayers.setMap(map);
-      /* end new code for Chicago Wards */
+      /* end code for Chicago Wards */
+      /* code for info windows on Chicago Wards */
+      /*
+      google.maps.event.addListener(wardLayers,'click',function(kmlEvent)
+      {
+        showInContentWindow(map, kmlEvent.latLng, kmlEvent.featureData.description);
+      });
+      */
+      /* end code for info windows on Chicago Wards */
     }
     else
     {
