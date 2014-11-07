@@ -26,15 +26,15 @@ function initialize()
             { saturation: -20 }
           ]
         },{
-          //featureType: "road",
-          //elementType: "geometry",
+          featureType: "road",
+          elementType: "geometry",
           stylers: [
             { lightness: 100 },
             { visibility: "simplified" }
           ]
         },{
-          //featureType: "road",
-          //elementType: "labels",
+          featureType: "road",
+          elementType: "labels",
           stylers: [
             { visibility: "off" }
           ]
@@ -51,36 +51,34 @@ function initialize()
       map.setMapTypeId('map_style');
 
       /* code for Chicago Wards */
+      /*
       var wardLayers = new google.maps.KmlLayer({
         url: 'http://cep-districts.herokuapp.com/ChicagoWards.kml'
       });
       wardLayers.setMap(map);
+      */
       /* end code for Chicago Wards */
       /* code for info windows on Chicago Wards */
+      /*
       google.maps.event.addListener(wardLayers,'click',function(kmlEvent)
       {
         showInContentWindow(map, kmlEvent.latLng, kmlEvent.featureData.description);
       });
+      */
       /* end code for info windows on Chicago Wards */
 
-      var coords = [
-        new google.maps.LatLng(25.774252, -80.190262),
-        new google.maps.LatLng(18.466465, -66.118292),
-        new google.maps.LatLng(32.321384, -64.75737),
-        new google.maps.LatLng(25.774252, -80.190262)
-      ];
-      coloredArea = new google.maps.Polygon({
-        paths: coords,
-        fillColor: '#FFFFFF'
+      ward1 = new google.maps.Polygon({
+        paths: square,
+        fillColor: '#000000'
       });
-      coloredArea.setMap(map);
+      ward1.setMap(map);
 
-      google.maps.event.addListener(coloredArea,"mouseover",function(){
+      google.maps.event.addListener(ward1,"mouseover",function(){
         this.setOptions({fillColor: "#00FF00"});
       });
 
-      google.maps.event.addListener(coloredArea,"mouseout",function(){
-        this.setOptions({fillColor: "#FFFFFF"});
+      google.maps.event.addListener(ward1,"mouseout",function(){
+        this.setOptions({fillColor: "#000000"});
       });
     }
     else
