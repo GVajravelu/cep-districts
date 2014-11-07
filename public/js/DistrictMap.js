@@ -62,6 +62,26 @@ function initialize()
         showInContentWindow(map, kmlEvent.latLng, kmlEvent.featureData.description);
       });
       /* end code for info windows on Chicago Wards */
+
+      var coords = [
+        new google.maps.LatLng(25.774252, -80.190262),
+        new google.maps.LatLng(18.466465, -66.118292),
+        new google.maps.LatLng(32.321384, -64.75737),
+        new google.maps.LatLng(25.774252, -80.190262)
+      ];
+      coloredArea = new google.maps.Polygon({
+        paths: coords,
+        fillColor: '#FFFFFF'
+      });
+      coloredArea.setMap(map);
+
+      google.maps.event.addListener(coloredArea,"mouseover",function(){
+        this.setOptions({fillColor: "#00FF00"});
+      });
+
+      google.maps.event.addListener(coloredArea,"mouseout",function(){
+        this.setOptions({fillColor: "#FFFFFF"});
+      });
     }
     else
     {
