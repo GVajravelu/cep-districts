@@ -26,15 +26,15 @@ function initialize()
             { saturation: -20 }
           ]
         },{
-          featureType: "road",
-          elementType: "geometry",
+          //featureType: "road",
+          //elementType: "geometry",
           stylers: [
             { lightness: 100 },
             { visibility: "simplified" }
           ]
         },{
-          featureType: "road",
-          elementType: "labels",
+          //featureType: "road",
+          //elementType: "labels",
           stylers: [
             { visibility: "off" }
           ]
@@ -68,7 +68,7 @@ function initialize()
       /* end code for info windows on Chicago Wards */
 
       ward1 = new google.maps.Polygon({
-        paths: square,
+        paths: ward1Coords,
         fillColor: '#000000'
       });
       ward1.setMap(map);
