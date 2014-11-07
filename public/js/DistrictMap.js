@@ -1,15 +1,13 @@
-/*
 function showInContentWindow(map, position, text)
 {
   var content = "<div>" + text + "</div>";
   var infowindow = new google.maps.InfoWindow({
     content: content,
-    position: position,
+    position: new google.maps.LatLng(position.lat(),position.lng()-0.205), // offset the longitude by 0.205 to the west to make up for the weird offset
     pixelOffset: new google.maps.Size(300,0),
   })
   infowindow.open(map);
 }
-*/
 
 function initialize()
 {
@@ -59,12 +57,10 @@ function initialize()
       wardLayers.setMap(map);
       /* end code for Chicago Wards */
       /* code for info windows on Chicago Wards */
-      /*
       google.maps.event.addListener(wardLayers,'click',function(kmlEvent)
       {
         showInContentWindow(map, kmlEvent.latLng, kmlEvent.featureData.description);
       });
-      */
       /* end code for info windows on Chicago Wards */
     }
     else
