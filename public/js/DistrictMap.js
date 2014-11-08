@@ -1,3 +1,6 @@
+var primaryColor = "#0080FF";
+var highlightColor = "#FF8000";
+
 function showInContentWindow(map, position, text)
 {
   var content = "<div>" + text + "</div>";
@@ -49,18 +52,18 @@ function initialize()
       {
         ward = new google.maps.Polygon({
           paths: wardArray[i],
-          fillColor: "#0080FF",
+          fillColor: primaryColor,
           strokeColor: "#FFFFFF",
           strokeWeight: 1
         });
         ward.setMap(map);
 
         google.maps.event.addListener(ward,"mouseover",function(){
-          this.setOptions({fillColor: "#FF8000"});
+          this.setOptions({fillColor: highlightColor});
         });
 
         google.maps.event.addListener(ward,"mouseout",function(){
-          this.setOptions({fillColor: "#0080FF"});
+          this.setOptions({fillColor: primaryColor});
         });
       }
       /* end code for mapping the wards */
