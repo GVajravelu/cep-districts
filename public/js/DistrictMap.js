@@ -17,8 +17,6 @@ function initialize()
   {
     if (status == google.maps.GeocoderStatus.OK)
     {
-      //alert('Latitude: ' + results[0].geometry.location.lat().toString() + ' Longitude: ' + results[0].geometry.location.lng().toString());
-      //alert('Bounds: ' + results[0].geometry.bounds.toString());
       var styles = [
         {
           stylers: [
@@ -26,15 +24,11 @@ function initialize()
             { saturation: -20 }
           ]
         },{
-          //featureType: "road",
-          //elementType: "geometry",
           stylers: [
             { lightness: 100 },
             { visibility: "simplified" }
           ]
         },{
-          //featureType: "road",
-          //elementType: "labels",
           stylers: [
             { visibility: "off" }
           ]
@@ -50,36 +44,24 @@ function initialize()
       map.mapTypes.set('map_style', styledMap);
       map.setMapTypeId('map_style');
 
-      /* code for Chicago Wards */
-      /*
-      var wardLayers = new google.maps.KmlLayer({
-        url: 'http://cep-districts.herokuapp.com/ChicagoWards.kml'
-      });
-      wardLayers.setMap(map);
-      */
-      /* end code for Chicago Wards */
-      /* code for info windows on Chicago Wards */
-      /*
-      google.maps.event.addListener(wardLayers,'click',function(kmlEvent)
+      /* map the wards */
+      for (i = 0; i < wardArray.length; i++)
       {
-        showInContentWindow(map, kmlEvent.latLng, kmlEvent.featureData.description);
-      });
-      */
-      /* end code for info windows on Chicago Wards */
+        ward = new google.maps.Polygon({
+          paths: wardArray[i],
+          fillColor: '#000000'
+        });
+        ward.setMap(map);
 
-      ward1 = new google.maps.Polygon({
-        paths: ward1Coords,
-        fillColor: '#000000'
-      });
-      ward1.setMap(map);
+        google.maps.event.addListener(ward,"mouseover",function(){
+          this.setOptions({fillColor: "#00FF00"});
+        });
 
-      google.maps.event.addListener(ward1,"mouseover",function(){
-        this.setOptions({fillColor: "#00FF00"});
-      });
-
-      google.maps.event.addListener(ward1,"mouseout",function(){
-        this.setOptions({fillColor: "#000000"});
-      });
+        google.maps.event.addListener(ward,"mouseout",function(){
+          this.setOptions({fillColor: "#000000"});
+        });
+      }
+      /* end code for mapping the wards */
     }
     else
     {
