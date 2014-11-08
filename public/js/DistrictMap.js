@@ -41,7 +41,10 @@ function initialize()
       var mapOptions =
       {
         center: results[0].geometry.location,
+        draggable: false,
         zoom: 11,
+        minZoom: 11,
+        maxZoom: 11
       };
       var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
       map.mapTypes.set('map_style', styledMap);
