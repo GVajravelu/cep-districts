@@ -11,7 +11,7 @@ function showInContentWindow(map, position, text)
 
 function initialize()
 {
-  var address = '60661';
+  var address = '60623';
   var geocoder = new google.maps.Geocoder();
   geocoder.geocode( { 'address': address}, function(results, status)
   {
@@ -38,7 +38,7 @@ function initialize()
       var mapOptions =
       {
         center: results[0].geometry.location,
-        zoom: 8,
+        zoom: 11,
       };
       var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
       map.mapTypes.set('map_style', styledMap);
@@ -49,16 +49,18 @@ function initialize()
       {
         ward = new google.maps.Polygon({
           paths: wardArray[i],
-          fillColor: '#000000'
+          fillColor: "#0080FF",
+          strokeColor: "#FFFFFF",
+          strokeWeight: 1
         });
         ward.setMap(map);
 
         google.maps.event.addListener(ward,"mouseover",function(){
-          this.setOptions({fillColor: "#00FF00"});
+          this.setOptions({fillColor: "#FF8000"});
         });
 
         google.maps.event.addListener(ward,"mouseout",function(){
-          this.setOptions({fillColor: "#000000"});
+          this.setOptions({fillColor: "#0080FF"});
         });
       }
       /* end code for mapping the wards */
