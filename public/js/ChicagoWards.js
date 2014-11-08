@@ -3392,7 +3392,7 @@ var ward50Coords = [
   new google.maps.LatLng(42.01954,-87.690189)
 ];
 
-var wardArray = [
+var wardCoordsArray = [
   ward1Coords,
   ward2Coords,
   ward3Coords,

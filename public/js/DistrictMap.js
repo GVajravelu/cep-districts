@@ -56,14 +56,14 @@ function initialize()
       contentText += "Average State Refund: $181.27";
 
       /* map the wards */
-      for (i = 0; i < wardArray.length; i++)
+      for (i = 0; i < wardCoordsArray.length; i++)
       {
         var infowindow = new google.maps.InfoWindow({
           content: contentText
         });
 
         var ward = new google.maps.Polygon({
-          paths: wardArray[i],
+          paths: wardCoordsArray[i],
           fillColor: primaryColor,
           strokeColor: "#FFFFFF",
           strokeWeight: 1
