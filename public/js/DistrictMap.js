@@ -1,18 +1,6 @@
 var primaryColor = "#0080FF";
 var highlightColor = "#FF8000";
 
-function showIndex(index)
-{
-  document.getElementById('index').innerHTML = index;
-}
-
-function makeCallback(index)
-{
-  return function() {
-    showIndex(index);
-  };
-}
-
 function initialize()
 {
   var address = '60623';
