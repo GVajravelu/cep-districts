@@ -50,32 +50,32 @@ function initialize()
       map.mapTypes.set('map_style', styledMap);
       map.setMapTypeId('map_style');
 
-      contentText = "<h4>Ward 1</h4>";
-      contentText += "Families served: 96<br/>";
-      contentText += "Volunteers: 10<br/>";
-      contentText += "Total Federal Refund: $178,058.00<br/>";
-      contentText += "Average Federal Refund: $2,000.65<br/>";
-      contentText += "Total State Refund: $13,595.00<br/>";
-      contentText += "Average State Refund: $181.27";
-
       /* map the wards */
-      for (i = 0; i < wardCoordsArray.length; i++)
+      for (wardNum = 0; wardNum < wardCoordsArray.length; ++wardNum)
       {
-        var infowindow = new google.maps.InfoWindow({
-          content: contentText
-        });
+        var contentText = "<h4>Ward " + wardNum + "</h4>";
+        contentText += "Families served: 96<br/>";
+        contentText += "Volunteers: 10<br/>";
+        contentText += "Total Federal Refund: $178,058.00<br/>";
+        contentText += "Average Federal Refund: $2,000.65<br/>";
+        contentText += "Total State Refund: $13,595.00<br/>";
+        contentText += "Average State Refund: $181.27";
 
         var ward = new google.maps.Polygon({
-          paths: wardCoordsArray[i],
+          paths: wardCoordsArray[wardNum],
           fillColor: primaryColor,
           strokeColor: "#FFFFFF",
           strokeWeight: 1
         });
         ward.setMap(map);
 
-        google.maps.event.addListener(ward,"mouseover",function(event){
+        var infowindow = new google.maps.InfoWindow({
+          position: new google.maps.LatLng(41.8369,-87.6847),
+          content: contentText
+        });
+
+        google.maps.event.addListener(ward,"mouseover",function(){
           this.setOptions({fillColor: highlightColor});
-          infowindow.setPosition(new google.maps.LatLng(41.8369,-87.6847));
           infowindow.open(map, this);
         });
 
