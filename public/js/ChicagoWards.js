@@ -3804,14 +3804,14 @@ var wardCenterCoordsArray = [
   new google.maps.LatLng(41.957713,-87.781976),
   new google.maps.LatLng(41.992194,-87.734614),
   new google.maps.LatLng(41.997060,-87.671004), // Ward 40
-  new google.maps.LatLng(41.751025,-87.703686),
-  new google.maps.LatLng(41.801025,-87.703686),
-  new google.maps.LatLng(41.801025,-87.703686),
-  new google.maps.LatLng(41.801025,-87.703686),
-  new google.maps.LatLng(41.801025,-87.703686),
-  new google.maps.LatLng(41.801025,-87.703686),
-  new google.maps.LatLng(41.801025,-87.703686),
-  new google.maps.LatLng(41.801025,-87.703686),
-  new google.maps.LatLng(41.801025,-87.703686),
-  new google.maps.LatLng(41.801025,-87.703686) // Ward 50
+  new google.maps.LatLng(42.003108,-87.810103),
+  new google.maps.LatLng(41.897619,-87.625191),
+  new google.maps.LatLng(41.926684,-87.638043),
+  new google.maps.LatLng(41.946921,-87.657077),
+  new google.maps.LatLng(41.982345,-87.769228),
+  new google.maps.LatLng(41.963235,-87.653882),
+  new google.maps.LatLng(41.969861,-87.688615),
+  new google.maps.LatLng(41.987137,-87.660572),
+  new google.maps.LatLng(42.012044,-87.670016),
+  new google.maps.LatLng(42.012544,-87.700016) // Ward 50
 ];
