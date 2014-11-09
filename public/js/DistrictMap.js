@@ -1,15 +1,16 @@
 var primaryColor = "#0080FF";
 var highlightColor = "#FF8000";
 
-function showInContentWindow(map, position, text)
+function showIndex(index)
 {
-  var content = "<div>" + text + "</div>";
-  var infowindow = new google.maps.InfoWindow({
-    content: content,
-    position: new google.maps.LatLng(position.lat(),position.lng()-0.205), // offset the longitude by 0.205 to the west to make up for the weird offset
-    pixelOffset: new google.maps.Size(300,0),
-  })
-  infowindow.open(map);
+  document.getElementById('index').innerHTML = index;
+}
+
+function makeCallback(index)
+{
+  return function() {
+    showIndex(index);
+  };
 }
 
 function initialize()
@@ -53,6 +54,7 @@ function initialize()
       /* map the wards */
       for (wardNum = 0; wardNum < wardCoordsArray.length; ++wardNum)
       {
+        /*
         var contentText = "<h4>Ward " + wardNum + "</h4>";
         contentText += "Families served: 96<br/>";
         contentText += "Volunteers: 10<br/>";
@@ -83,6 +85,33 @@ function initialize()
           this.setOptions({fillColor: primaryColor});
           infowindow.close();
         });
+        */
+
+        (function(wardNum)
+        {
+          var ward = new google.maps.Polygon({
+            paths: wardCoordsArray[wardNum],
+            fillColor: primaryColor,
+            strokeColor: "#FFFFFF",
+            strokeWeight: 1
+          });
+          ward.setMap(map);
+
+          var infowindow = new google.maps.InfoWindow({
+            position: new google.maps.LatLng(41.8369,-87.6847),
+            content: "<h4>Ward " + (wardNum+1).toString() + "</h4>"
+          });
+
+          google.maps.event.addListener(ward,"mouseover",function(){
+            this.setOptions({fillColor: highlightColor});
+            infowindow.open(map, this);
+          });
+
+          google.maps.event.addListener(ward,"mouseout",function(){
+            this.setOptions({fillColor: primaryColor});
+            infowindow.close();
+          });
+        })(wardNum);
       }
       /* end code for mapping the wards */
     }
