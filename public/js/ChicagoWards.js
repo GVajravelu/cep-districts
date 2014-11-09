@@ -3762,3 +3762,56 @@ var avgStateArray = [
   161.86,
   203.48 // Ward 50
 ];
+
+var wardCenterCoordsArray = [
+  new google.maps.LatLng(41.929007,-87.683782), // Ward 1
+  new google.maps.LatLng(41.864422,-87.609589),
+  new google.maps.LatLng(41.833185,-87.626099),
+  new google.maps.LatLng(41.834965,-87.606431),
+  new google.maps.LatLng(41.794490,-87.590507),
+  new google.maps.LatLng(41.761177,-87.613254),
+  new google.maps.LatLng(41.754834,-87.550222),
+  new google.maps.LatLng(41.747737,-87.591057),
+  new google.maps.LatLng(41.709343,-87.613870),
+  new google.maps.LatLng(41.729735,-87.528928), // Ward 10
+  new google.maps.LatLng(41.881025,-87.703686),
+  new google.maps.LatLng(41.881025,-87.703686),
+  new google.maps.LatLng(41.881025,-87.703686),
+  new google.maps.LatLng(41.881025,-87.703686),
+  new google.maps.LatLng(41.881025,-87.703686),
+  new google.maps.LatLng(41.881025,-87.703686),
+  new google.maps.LatLng(41.881025,-87.703686),
+  new google.maps.LatLng(41.881025,-87.703686),
+  new google.maps.LatLng(41.881025,-87.703686),
+  new google.maps.LatLng(41.881025,-87.703686), // Ward 20
+  new google.maps.LatLng(41.881025,-87.703686),
+  new google.maps.LatLng(41.881025,-87.703686),
+  new google.maps.LatLng(41.881025,-87.703686),
+  new google.maps.LatLng(41.881025,-87.703686),
+  new google.maps.LatLng(41.881025,-87.703686),
+  new google.maps.LatLng(41.881025,-87.703686),
+  new google.maps.LatLng(41.881025,-87.703686),
+  new google.maps.LatLng(41.881025,-87.703686),
+  new google.maps.LatLng(41.881025,-87.703686),
+  new google.maps.LatLng(41.881025,-87.703686), // Ward 30
+  new google.maps.LatLng(41.881025,-87.703686),
+  new google.maps.LatLng(41.881025,-87.703686),
+  new google.maps.LatLng(41.881025,-87.703686),
+  new google.maps.LatLng(41.881025,-87.703686),
+  new google.maps.LatLng(41.881025,-87.703686),
+  new google.maps.LatLng(41.881025,-87.703686),
+  new google.maps.LatLng(41.881025,-87.703686),
+  new google.maps.LatLng(41.881025,-87.703686),
+  new google.maps.LatLng(41.881025,-87.703686),
+  new google.maps.LatLng(41.881025,-87.703686), // Ward 40
+  new google.maps.LatLng(41.881025,-87.703686),
+  new google.maps.LatLng(41.881025,-87.703686),
+  new google.maps.LatLng(41.881025,-87.703686),
+  new google.maps.LatLng(41.881025,-87.703686),
+  new google.maps.LatLng(41.881025,-87.703686),
+  new google.maps.LatLng(41.881025,-87.703686),
+  new google.maps.LatLng(41.881025,-87.703686),
+  new google.maps.LatLng(41.881025,-87.703686),
+  new google.maps.LatLng(41.881025,-87.703686),
+  new google.maps.LatLng(41.881025,-87.703686) // Ward 50
+];

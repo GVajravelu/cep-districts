@@ -12,15 +12,19 @@ function initialize()
       var styles = [
         {
           stylers: [
-            { hue: "#00ff66" },
-            { saturation: -20 }
+            { /*hue: "#00ff66"*/ },
+            { saturation: -80 }
           ]
         },{
+          featureType: "road",
+          elementType: "labels",
           stylers: [
             { lightness: 100 },
             { visibility: "simplified" }
           ]
         },{
+          featureType: "road",
+          elementType: "labels",
           stylers: [
             { visibility: "off" }
           ]
@@ -30,10 +34,10 @@ function initialize()
       var mapOptions =
       {
         center: results[0].geometry.location,
-        draggable: false,
+        //draggable: false,
         zoom: 11,
-        minZoom: 11,
-        maxZoom: 11
+        //minZoom: 11,
+        //maxZoom: 11
       };
       var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
       map.mapTypes.set('map_style', styledMap);
@@ -61,13 +65,13 @@ function initialize()
           contentText += "Average State Refund: " + numeral(avgStateArray[wardNum]).format('$0,0.00');
 
           var infowindow = new google.maps.InfoWindow({
-            position: new google.maps.LatLng(41.8369,-87.6847),
+            position: wardCenterCoordsArray[wardNum],
             content: contentText
           });
 
           google.maps.event.addListener(ward,"mouseover",function(){
             this.setOptions({fillColor: highlightColor});
-            infowindow.open(map, this);
+            infowindow.open(map);
           });
 
           google.maps.event.addListener(ward,"mouseout",function(){
