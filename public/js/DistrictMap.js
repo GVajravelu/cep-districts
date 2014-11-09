@@ -54,40 +54,7 @@ function initialize()
       /* map the wards */
       for (wardNum = 0; wardNum < wardCoordsArray.length; ++wardNum)
       {
-        /*
-        var contentText = "<h4>Ward " + wardNum + "</h4>";
-        contentText += "Families served: 96<br/>";
-        contentText += "Volunteers: 10<br/>";
-        contentText += "Total Federal Refund: $178,058.00<br/>";
-        contentText += "Average Federal Refund: $2,000.65<br/>";
-        contentText += "Total State Refund: $13,595.00<br/>";
-        contentText += "Average State Refund: $181.27";
-
-        var ward = new google.maps.Polygon({
-          paths: wardCoordsArray[wardNum],
-          fillColor: primaryColor,
-          strokeColor: "#FFFFFF",
-          strokeWeight: 1
-        });
-        ward.setMap(map);
-
-        var infowindow = new google.maps.InfoWindow({
-          position: new google.maps.LatLng(41.8369,-87.6847),
-          content: contentText
-        });
-
-        google.maps.event.addListener(ward,"mouseover",function(){
-          this.setOptions({fillColor: highlightColor});
-          infowindow.open(map, this);
-        });
-
-        google.maps.event.addListener(ward,"mouseout",function(){
-          this.setOptions({fillColor: primaryColor});
-          infowindow.close();
-        });
-        */
-
-        (function(wardNum)
+        (function(wardNum) // this function is necessary so wardNum is not 50 on the mouseover event
         {
           var ward = new google.maps.Polygon({
             paths: wardCoordsArray[wardNum],
@@ -96,6 +63,14 @@ function initialize()
             strokeWeight: 1
           });
           ward.setMap(map);
+
+          var contentText = "<h4>Ward " + (wardNum+1).toString() + "</h4>";
+          contentText += "Families served: 96<br/>";
+          contentText += "Volunteers: 10<br/>";
+          contentText += "Total Federal Refund: $178,058.00<br/>";
+          contentText += "Average Federal Refund: $2,000.65<br/>";
+          contentText += "Total State Refund: $13,595.00<br/>";
+          contentText += "Average State Refund: $181.27";
 
           var infowindow = new google.maps.InfoWindow({
             position: new google.maps.LatLng(41.8369,-87.6847),
