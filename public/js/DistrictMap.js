@@ -66,6 +66,7 @@ function initialize()
 
           var infowindow = new google.maps.InfoWindow({
             position: wardCenterCoordsArray[wardNum],
+            maxWidth: 500,
             content: contentText
           });
 
