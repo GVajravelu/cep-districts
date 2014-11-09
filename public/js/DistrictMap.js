@@ -53,16 +53,16 @@ function initialize()
           ward.setMap(map);
 
           var contentText = "<h4>Ward " + (wardNum+1).toString() + "</h4>";
-          contentText += "Families served: 96<br/>";
-          contentText += "Volunteers: 10<br/>";
-          contentText += "Total Federal Refund: $178,058.00<br/>";
-          contentText += "Average Federal Refund: $2,000.65<br/>";
-          contentText += "Total State Refund: $13,595.00<br/>";
-          contentText += "Average State Refund: $181.27";
+          contentText += "Families served: " + famServArray[wardNum] + "<br/>";
+          contentText += "Volunteers: " + volArray[wardNum] + "<br/>";
+          contentText += "Total Federal Refund: " + numeral(totFedArray[wardNum]).format('$0,0.00') + "<br/>";
+          contentText += "Average Federal Refund: " + numeral(avgFedArray[wardNum]).format('$0,0.00') + "<br/>";
+          contentText += "Total State Refund: " + numeral(totStateArray[wardNum]).format('$0,0.00') + "<br/>";
+          contentText += "Average State Refund: " + numeral(avgStateArray[wardNum]).format('$0,0.00');
 
           var infowindow = new google.maps.InfoWindow({
             position: new google.maps.LatLng(41.8369,-87.6847),
-            content: "<h4>Ward " + (wardNum+1).toString() + "</h4>"
+            content: contentText
           });
 
           google.maps.event.addListener(ward,"mouseover",function(){
