@@ -3773,7 +3773,7 @@ var wardCenterCoordsArray = [
   new google.maps.LatLng(41.754834,-87.550222),
   new google.maps.LatLng(41.747737,-87.591057),
   new google.maps.LatLng(41.709343,-87.613870),
-  new google.maps.LatLng(41.729735,-87.528928), // Ward 10
+  new google.maps.LatLng(41.729735,-87.535928), // Ward 10
   new google.maps.LatLng(41.836601,-87.648844),
   new google.maps.LatLng(41.838070,-87.693454),
   new google.maps.LatLng(41.787974,-87.723471),

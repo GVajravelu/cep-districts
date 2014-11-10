@@ -1,8 +1,8 @@
-var primaryColor = "#0080FF"; // looks good with opacity around 0.5
-var highlightColor = "#FF8000";
+//var primaryColor = "#0080FF"; // looks good with opacity around 0.5
+//var highlightColor = "#FF8000";
 
-//var primaryColor = "#000099"; // looks good with opacity at 1
-//var highlightColor = "#FF9933";
+var primaryColor = "#000099"; // looks good with opacity at 1
+var highlightColor = "#FF9933";
 
 function initialize()
 {
