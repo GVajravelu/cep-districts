@@ -16,15 +16,15 @@ function initialize()
             { saturation: -80 }
           ]
         },{
-          featureType: "road",
-          elementType: "labels",
+          //featureType: "road",
+          //elementType: "labels",
           stylers: [
             { lightness: 100 },
             { visibility: "simplified" }
           ]
         },{
-          featureType: "road",
-          elementType: "labels",
+          //featureType: "road",
+          //elementType: "labels",
           stylers: [
             { visibility: "off" }
           ]
