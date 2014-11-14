@@ -33,3 +33,14 @@ a:hover.simple-link
   color: #000;
   text-decoration: underline;
 }
+
+@font-face
+{
+  font-family: "Universal";
+  src: url("univers-45-light-latin-1.ttf")
+}
+
+#universal
+{
+  font-family: 'Universal',sans-serif;
+}

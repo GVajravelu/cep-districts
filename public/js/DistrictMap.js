@@ -57,13 +57,13 @@ function initialize()
           });
           ward.setMap(map);
 
-          var contentText = "<h4>Ward " + (wardNum+1).toString() + "</h4>";
+          var contentText = "<div id='universal'><h4>Ward " + (wardNum+1).toString() + "</h4>";
           contentText += "Families served: " + famServArray[wardNum] + "<br/>";
           contentText += "Volunteers: " + volArray[wardNum] + "<br/>";
           contentText += "Total Federal Refund: " + numeral(totFedArray[wardNum]).format('$0,0.00') + "<br/>";
           contentText += "Average Federal Refund: " + numeral(avgFedArray[wardNum]).format('$0,0.00') + "<br/>";
           contentText += "Total State Refund: " + numeral(totStateArray[wardNum]).format('$0,0.00') + "<br/>";
-          contentText += "Average State Refund: " + numeral(avgStateArray[wardNum]).format('$0,0.00');
+          contentText += "Average State Refund: " + numeral(avgStateArray[wardNum]).format('$0,0.00') + "</div>";
 
           var infowindow = new google.maps.InfoWindow({
             position: wardCenterCoordsArray[wardNum],
