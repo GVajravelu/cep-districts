@@ -1,8 +1,5 @@
-//var primaryColor = "#0080FF"; // looks good with opacity around 0.5
-//var highlightColor = "#FF8000";
-
-var primaryColor = "#000099"; // looks good with opacity at 1
-var highlightColor = "#FF9933";
+var primaryColor = "#7CA3CA";
+var highlightColor = "#E7B222";
 
 function initialize()
 {
@@ -54,7 +51,7 @@ function initialize()
           var ward = new google.maps.Polygon({
             paths: wardCoordsArray[wardNum],
             fillColor: primaryColor,
-            fillOpacity: 0.5,
+            fillOpacity: 0.7,
             strokeColor: "#FFFFFF",
             strokeWeight: 1
           });
