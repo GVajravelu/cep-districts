@@ -3,7 +3,7 @@ var highlightColor = "#E7B222";
 
 function initialize()
 {
-  var address = '60623';
+  var address = '60624';
   var geocoder = new google.maps.Geocoder();
   geocoder.geocode( { 'address': address}, function(results, status)
   {
@@ -31,17 +31,29 @@ function initialize()
         }
       ];
       var styledMap = new google.maps.StyledMapType(styles, { named: "Styled Map"});
+
       var mapOptions =
       {
         center: results[0].geometry.location,
         //draggable: false,
         zoom: 11,
-        //minZoom: 11,
-        //maxZoom: 11
+        minZoom: 11,
+        maxZoom: 11
       };
       var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
       map.mapTypes.set('map_style', styledMap);
       map.setMapTypeId('map_style');
+
+      /* add CEP logo to the map */
+      var logoLatLng = new google.maps.LatLng(42.070000,-87.498163);
+      var logoSrc = 'images/CEP_small_logo.gif';
+      var logo = new google.maps.Marker({
+        position: logoLatLng,
+        map: map,
+        icon: logoSrc
+      });
+      /* end adding CEP logo to the map */
+
 
       /* map the wards */
       for (wardNum = 0; wardNum < wardCoordsArray.length; ++wardNum)
