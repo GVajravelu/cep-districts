@@ -3,7 +3,7 @@ var highlightColor = "#E7B222";
 
 function initialize()
 {
-  var address = '60624';
+  var address = '61702';
   var geocoder = new google.maps.Geocoder();
   geocoder.geocode( { 'address': address}, function(results, status)
   {
@@ -83,17 +83,17 @@ function initialize()
             maxWidth: 500,
             content: contentText
           });
+*/
 
           google.maps.event.addListener(district,"mouseover",function(){
             this.setOptions({fillColor: highlightColor});
-            infowindow.open(map);
+            //infowindow.open(map);
           });
 
           google.maps.event.addListener(district,"mouseout",function(){
             this.setOptions({fillColor: primaryColor});
-            infowindow.close();
+            //infowindow.close();
           });
-*/
         })(districtNum);
       }
       /* end code for mapping the district */
