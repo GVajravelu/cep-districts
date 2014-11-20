@@ -69,7 +69,6 @@ function initialize()
           });
           district.setMap(map);
 
-/*
           var contentText = "<div id='universal'><h4>Ward " + (districtNum+1).toString() + "</h4>";
           contentText += "Families served: " + famServArray[districtNum] + "<br/>";
           contentText += "Volunteers: " + volArray[districtNum] + "<br/>";
@@ -83,16 +82,15 @@ function initialize()
             maxWidth: 500,
             content: contentText
           });
-*/
 
           google.maps.event.addListener(district,"mouseover",function(){
             this.setOptions({fillColor: highlightColor});
-            //infowindow.open(map);
+            infowindow.open(map);
           });
 
           google.maps.event.addListener(district,"mouseout",function(){
             this.setOptions({fillColor: primaryColor});
-            //infowindow.close();
+            infowindow.close();
           });
         })(districtNum);
       }
