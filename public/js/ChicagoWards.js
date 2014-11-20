@@ -1,4 +1,7 @@
-var ward2Coords = [
+var address = '60624';
+var mapZoom = 11;
+
+var district2Coords = [
   new google.maps.LatLng(41.881025,-87.703686),
   new google.maps.LatLng(41.881040999999996,-87.701229),
   new google.maps.LatLng(41.87828,-87.70117),
@@ -188,7 +191,7 @@ var ward2Coords = [
   new google.maps.LatLng(41.88544,-87.70379),
   new google.maps.LatLng(41.881025,-87.703686)
 ];
-var ward3Coords = [
+var district3Coords = [
   new google.maps.LatLng(41.86085,-87.62401),
   new google.maps.LatLng(41.86088000000001,-87.62566),
   new google.maps.LatLng(41.862449999999995,-87.62577),
@@ -267,7 +270,7 @@ var ward3Coords = [
   new google.maps.LatLng(41.854279999999996,-87.62384),
   new google.maps.LatLng(41.86085,-87.62401)
 ];
-var ward4Coords = [
+var district4Coords = [
   new google.maps.LatLng(41.84517000000001,-87.60897000000001),
   new google.maps.LatLng(41.84504,-87.61598),
   new google.maps.LatLng(41.84558,-87.61667),
@@ -368,7 +371,7 @@ var ward4Coords = [
   new google.maps.LatLng(41.844460000000005,-87.60931),
   new google.maps.LatLng(41.84517000000001,-87.60897000000001)
 ];
-var ward5Coords = [
+var district5Coords = [
   new google.maps.LatLng(41.80044,-87.60635),
   new google.maps.LatLng(41.78584,-87.60604),
   new google.maps.LatLng(41.78607999999999,-87.58911),
@@ -471,7 +474,7 @@ var ward5Coords = [
   new google.maps.LatLng(41.80047,-87.6039),
   new google.maps.LatLng(41.80044,-87.60635)
 ];
-var ward6Coords = [
+var district6Coords = [
   new google.maps.LatLng(41.77431000000001,-87.64465),
   new google.maps.LatLng(41.772479999999995,-87.6446),
   new google.maps.LatLng(41.77247,-87.64582),
@@ -539,7 +542,7 @@ var ward6Coords = [
   new google.maps.LatLng(41.77456,-87.62779),
   new google.maps.LatLng(41.77431000000001,-87.64465)
 ];
-var ward7Coords = [
+var district7Coords = [
   new google.maps.LatLng(41.766242000000005,-87.560349),
   new google.maps.LatLng(41.766338,-87.566507),
   new google.maps.LatLng(41.764433,-87.566507),
@@ -640,7 +643,7 @@ var ward7Coords = [
   new google.maps.LatLng(41.76590600000001,-87.560563),
   new google.maps.LatLng(41.766242000000005,-87.560349)
 ];
-var ward8Coords = [
+var district8Coords = [
   new google.maps.LatLng(41.76231,-87.60326),
   new google.maps.LatLng(41.76232,-87.604),
   new google.maps.LatLng(41.76159,-87.60307),
@@ -676,7 +679,7 @@ var ward8Coords = [
   new google.maps.LatLng(41.75156,-87.5883),
   new google.maps.LatLng(41.76231,-87.60326)
 ];
-var ward9Coords = [
+var district9Coords = [
   new google.maps.LatLng(41.64456,-87.57863),
   new google.maps.LatLng(41.64751,-87.57906),
   new google.maps.LatLng(41.653220000000005,-87.58326),
@@ -745,7 +748,7 @@ var ward9Coords = [
   new google.maps.LatLng(41.64472,-87.61734),
   new google.maps.LatLng(41.64456,-87.57863)
 ];
-var ward10Coords = [
+var district10Coords = [
   new google.maps.LatLng(41.73095,-87.52449),
   new google.maps.LatLng(41.73153,-87.52492),
   new google.maps.LatLng(41.73214999999999,-87.52908),
@@ -831,7 +834,7 @@ var ward10Coords = [
   new google.maps.LatLng(41.70966,-87.52455),
   new google.maps.LatLng(41.73095,-87.52449)
 ];
-var ward11Coords = [
+var district11Coords = [
   new google.maps.LatLng(41.849312,-87.646437),
   new google.maps.LatLng(41.848497,-87.649097),
   new google.maps.LatLng(41.848001999999994,-87.65311),
@@ -874,7 +877,7 @@ var ward11Coords = [
   new google.maps.LatLng(41.849552,-87.644377),
   new google.maps.LatLng(41.849312,-87.646437)
 ];
-var ward12Coords = [
+var district12Coords = [
   new google.maps.LatLng(41.83212,-87.68458),
   new google.maps.LatLng(41.83221999999999,-87.67776),
   new google.maps.LatLng(41.8358,-87.67793),
@@ -936,7 +939,7 @@ var ward12Coords = [
   new google.maps.LatLng(41.82304,-87.6842),
   new google.maps.LatLng(41.83212,-87.68458)
 ];
-var ward13Coords = [
+var district13Coords = [
   new google.maps.LatLng(41.74198,-87.74066),
   new google.maps.LatLng(41.74203,-87.73557),
   new google.maps.LatLng(41.74194000000001,-87.73485),
@@ -968,7 +971,7 @@ var ward13Coords = [
   new google.maps.LatLng(41.74186,-87.74114),
   new google.maps.LatLng(41.74198,-87.74066)
 ];
-var ward14Coords = [
+var district14Coords = [
   new google.maps.LatLng(41.814932000000006,-87.743393),
   new google.maps.LatLng(41.81498800000001,-87.73846900000001),
   new google.maps.LatLng(41.807671,-87.738308),
@@ -1005,7 +1008,7 @@ var ward14Coords = [
   new google.maps.LatLng(41.817432999999994,-87.743447),
   new google.maps.LatLng(41.814932000000006,-87.743393)
 ];
-var ward15Coords = [
+var district15Coords = [
   new google.maps.LatLng(41.771521,-87.712698),
   new google.maps.LatLng(41.77184100000001,-87.693236),
   new google.maps.LatLng(41.76816900000001,-87.693129),
@@ -1038,7 +1041,7 @@ var ward15Coords = [
   new google.maps.LatLng(41.782363,-87.713009),
   new google.maps.LatLng(41.771521,-87.712698)
 ];
-var ward16Coords = [
+var district16Coords = [
   new google.maps.LatLng(41.804543,-87.684315),
   new google.maps.LatLng(41.793874,-87.684063),
   new google.maps.LatLng(41.79362600000001,-87.696218),
@@ -1093,7 +1096,7 @@ var ward16Coords = [
   new google.maps.LatLng(41.804544,-87.683741),
   new google.maps.LatLng(41.804543,-87.684315)
 ];
-var ward17Coords = [
+var district17Coords = [
   new google.maps.LatLng(41.747289,-87.625751),
   new google.maps.LatLng(41.750249,-87.62578400000001),
   new google.maps.LatLng(41.750986,-87.62588),
@@ -1128,7 +1131,7 @@ var ward17Coords = [
   new google.maps.LatLng(41.74714500000001,-87.635214),
   new google.maps.LatLng(41.747289,-87.625751)
 ];
-var ward18Coords = [
+var district18Coords = [
   new google.maps.LatLng(41.735808,-87.663088),
   new google.maps.LatLng(41.74307700000001,-87.66326),
   new google.maps.LatLng(41.743061,-87.664483),
@@ -1161,7 +1164,7 @@ var ward18Coords = [
   new google.maps.LatLng(41.734528999999995,-87.741129),
   new google.maps.LatLng(41.735808,-87.663088)
 ];
-var ward19Coords = [
+var district19Coords = [
   new google.maps.LatLng(41.679069999999996,-87.67221),
   new google.maps.LatLng(41.68466,-87.66909),
   new google.maps.LatLng(41.6847,-87.66773),
@@ -1220,7 +1223,7 @@ var ward19Coords = [
   new google.maps.LatLng(41.67733,-87.67240000000001),
   new google.maps.LatLng(41.679069999999996,-87.67221)
 ];
-var ward20Coords = [
+var district20Coords = [
   new google.maps.LatLng(41.804846,-87.675802),
   new google.maps.LatLng(41.80495,-87.66493),
   new google.maps.LatLng(41.80318,-87.66485),
@@ -1309,7 +1312,7 @@ var ward20Coords = [
   new google.maps.LatLng(41.806701000000004,-87.675855),
   new google.maps.LatLng(41.804846,-87.675802)
 ];
-var ward21Coords = [
+var district21Coords = [
   new google.maps.LatLng(41.74728,-87.62573),
   new google.maps.LatLng(41.74712,-87.635193),
   new google.maps.LatLng(41.74897699999999,-87.634689),
@@ -1363,7 +1366,7 @@ var ward21Coords = [
   new google.maps.LatLng(41.743718,-87.625719),
   new google.maps.LatLng(41.74728,-87.62573)
 ];
-var ward22Coords = [
+var district22Coords = [
   new google.maps.LatLng(41.83171,-87.70464),
   new google.maps.LatLng(41.83721,-87.70480000000002),
   new google.maps.LatLng(41.83718,-87.7073),
@@ -1386,7 +1389,7 @@ var ward22Coords = [
   new google.maps.LatLng(41.820999,-87.738619),
   new google.maps.LatLng(41.83171,-87.70464)
 ];
-var ward23Coords = [
+var district23Coords = [
   new google.maps.LatLng(41.775844,-87.781148),
   new google.maps.LatLng(41.775955999999994,-87.776341),
   new google.maps.LatLng(41.777764,-87.776363),
@@ -1418,7 +1421,7 @@ var ward23Coords = [
   new google.maps.LatLng(41.774024,-87.781105),
   new google.maps.LatLng(41.775844,-87.781148)
 ];
-var ward25Coords = [
+var district25Coords = [
   new google.maps.LatLng(41.86336,-87.65643),
   new google.maps.LatLng(41.85962,-87.65956),
   new google.maps.LatLng(41.85949,-87.6784),
@@ -1477,7 +1480,7 @@ var ward25Coords = [
   new google.maps.LatLng(41.86352,-87.65175),
   new google.maps.LatLng(41.86336,-87.65643)
 ];
-var ward34Coords = [
+var district34Coords = [
   new google.maps.LatLng(41.71429,-87.63945),
   new google.maps.LatLng(41.714200000000005,-87.64296),
   new google.maps.LatLng(41.71416,-87.64801),
@@ -1528,7 +1531,7 @@ var ward34Coords = [
   new google.maps.LatLng(41.70702,-87.63929),
   new google.maps.LatLng(41.71429,-87.63945)
 ];
-var ward1Coords = [
+var district1Coords = [
   new google.maps.LatLng(41.9404,-87.68565600000001),
   new google.maps.LatLng(41.94036800000001,-87.688097),
   new google.maps.LatLng(41.93947,-87.68807),
@@ -1624,7 +1627,7 @@ var ward1Coords = [
   new google.maps.LatLng(41.937686,-87.685586),
   new google.maps.LatLng(41.9404,-87.68565600000001)
 ];
-var ward24Coords = [
+var district24Coords = [
   new google.maps.LatLng(41.851712000000006,-87.712408),
   new google.maps.LatLng(41.851983,-87.711185),
   new google.maps.LatLng(41.851648000000004,-87.710885),
@@ -1666,7 +1669,7 @@ var ward24Coords = [
   new google.maps.LatLng(41.851314,-87.739456),
   new google.maps.LatLng(41.851712000000006,-87.712408)
 ];
-var ward26Coords = [
+var district26Coords = [
   new google.maps.LatLng(41.90085,-87.71289),
   new google.maps.LatLng(41.90001,-87.7119),
   new google.maps.LatLng(41.90024,-87.71143),
@@ -1738,7 +1741,7 @@ var ward26Coords = [
   new google.maps.LatLng(41.904219999999995,-87.72147),
   new google.maps.LatLng(41.90085,-87.71289)
 ];
-var ward27Coords = [
+var district27Coords = [
   new google.maps.LatLng(41.9109,-87.64828),
   new google.maps.LatLng(41.897960000000005,-87.64781),
   new google.maps.LatLng(41.89835,-87.64941),
@@ -1817,7 +1820,7 @@ var ward27Coords = [
   new google.maps.LatLng(41.91100000000001,-87.64347),
   new google.maps.LatLng(41.9109,-87.64828)
 ];
-var ward28Coords = [
+var district28Coords = [
   new google.maps.LatLng(41.89537299999999,-87.726066),
   new google.maps.LatLng(41.894994,-87.748227),
   new google.maps.LatLng(41.889531,-87.748049),
@@ -1888,7 +1891,7 @@ var ward28Coords = [
   new google.maps.LatLng(41.885402,-87.725809),
   new google.maps.LatLng(41.89537299999999,-87.726066)
 ];
-var ward29Coords = [
+var district29Coords = [
   new google.maps.LatLng(41.872945,-87.754809),
   new google.maps.LatLng(41.873009,-87.749144),
   new google.maps.LatLng(41.875809,-87.749256),
@@ -1923,7 +1926,7 @@ var ward29Coords = [
   new google.maps.LatLng(41.865747,-87.754557),
   new google.maps.LatLng(41.872945,-87.754809)
 ];
-var ward30Coords = [
+var district30Coords = [
   new google.maps.LatLng(41.922059999999995,-87.772),
   new google.maps.LatLng(41.92569999999999,-87.77217),
   new google.maps.LatLng(41.92569999999999,-87.77093),
@@ -2003,7 +2006,7 @@ var ward30Coords = [
   new google.maps.LatLng(41.92205,-87.77323),
   new google.maps.LatLng(41.922059999999995,-87.772)
 ];
-var ward31Coords = [
+var district31Coords = [
   new google.maps.LatLng(41.90976,-87.73544),
   new google.maps.LatLng(41.90977000000001,-87.73493),
   new google.maps.LatLng(41.9116,-87.73497),
@@ -2052,7 +2055,7 @@ var ward31Coords = [
   new google.maps.LatLng(41.9143,-87.74696),
   new google.maps.LatLng(41.90976,-87.73544)
 ];
-var ward32Coords = [
+var district32Coords = [
   new google.maps.LatLng(41.94701400000001,-87.668881),
   new google.maps.LatLng(41.94696600000001,-87.673666),
   new google.maps.LatLng(41.945083000000004,-87.673602),
@@ -2153,7 +2156,7 @@ var ward32Coords = [
   new google.maps.LatLng(41.943359,-87.668796),
   new google.maps.LatLng(41.94701400000001,-87.668881)
 ];
-var ward33Coords = [
+var district33Coords = [
   new google.maps.LatLng(41.975799,-87.708707),
   new google.maps.LatLng(41.968459,-87.708482),
   new google.maps.LatLng(41.968331,-87.720702),
@@ -2191,7 +2194,7 @@ var ward33Coords = [
   new google.maps.LatLng(41.97579700000001,-87.70480200000002),
   new google.maps.LatLng(41.975799,-87.708707)
 ];
-var ward35Coords = [
+var district35Coords = [
   new google.maps.LatLng(41.920914,-87.719326),
   new google.maps.LatLng(41.92276,-87.71941),
   new google.maps.LatLng(41.92278,-87.71699),
@@ -2258,7 +2261,7 @@ var ward35Coords = [
   new google.maps.LatLng(41.920883999999994,-87.722987),
   new google.maps.LatLng(41.920914,-87.719326)
 ];
-var ward36Coords = [
+var district36Coords = [
   new google.maps.LatLng(41.938445,-87.776229),
   new google.maps.LatLng(41.94212,-87.776358),
   new google.maps.LatLng(41.942064,-87.781234),
@@ -2306,7 +2309,7 @@ var ward36Coords = [
   new google.maps.LatLng(41.936609,-87.77617),
   new google.maps.LatLng(41.938445,-87.776229)
 ];
-var ward37Coords = [
+var district37Coords = [
   new google.maps.LatLng(41.906282,-87.726742),
   new google.maps.LatLng(41.90755,-87.72984),
   new google.maps.LatLng(41.914306,-87.746982),
@@ -2350,7 +2353,7 @@ var ward37Coords = [
   new google.maps.LatLng(41.906245999999996,-87.728861),
   new google.maps.LatLng(41.906282,-87.726742)
 ];
-var ward38Coords = [
+var district38Coords = [
   new google.maps.LatLng(41.96840300000001,-87.788047),
   new google.maps.LatLng(41.964845,-87.788047),
   new google.maps.LatLng(41.964366,-87.787918),
@@ -2400,7 +2403,7 @@ var ward38Coords = [
   new google.maps.LatLng(41.968545,-87.777109),
   new google.maps.LatLng(41.96840300000001,-87.788047)
 ];
-var ward39Coords = [
+var district39Coords = [
   new google.maps.LatLng(41.99731,-87.7228),
   new google.maps.LatLng(41.997303,-87.750142),
   new google.maps.LatLng(41.995988,-87.750614),
@@ -2447,7 +2450,7 @@ var ward39Coords = [
   new google.maps.LatLng(41.99371,-87.72267),
   new google.maps.LatLng(41.99731,-87.7228)
 ];
-var ward40Coords = [
+var district40Coords = [
   new google.maps.LatLng(42.002589,-87.675147),
   new google.maps.LatLng(41.99802100000001,-87.675072),
   new google.maps.LatLng(41.99802100000001,-87.675544),
@@ -2503,7 +2506,7 @@ var ward40Coords = [
   new google.maps.LatLng(42.002621,-87.670491),
   new google.maps.LatLng(42.002589,-87.675147)
 ];
-var ward41Coords = [
+var district41Coords = [
   new google.maps.LatLng(41.98884614439517,-87.85497548307694),
   new google.maps.LatLng(41.989028000000005,-87.855831),
   new google.maps.LatLng(41.988135,-87.855445),
@@ -2749,7 +2752,7 @@ var ward41Coords = [
   new google.maps.LatLng(41.988629,-87.853954),
   new google.maps.LatLng(41.98884614439517,-87.85497548307694)
 ];
-var ward42Coords = [
+var district42Coords = [
   new google.maps.LatLng(41.878349,-87.620816),
   new google.maps.LatLng(41.873204,-87.620645),
   new google.maps.LatLng(41.8733,-87.616181),
@@ -2803,7 +2806,7 @@ var ward42Coords = [
   new google.maps.LatLng(41.878157,-87.633648),
   new google.maps.LatLng(41.878349,-87.620816)
 ];
-var ward43Coords = [
+var district43Coords = [
   new google.maps.LatLng(41.93245,-87.63169),
   new google.maps.LatLng(41.932586,-87.63169),
   new google.maps.LatLng(41.93258,-87.63255),
@@ -2922,7 +2925,7 @@ var ward43Coords = [
   new google.maps.LatLng(41.93249999999999,-87.63143),
   new google.maps.LatLng(41.93245,-87.63169)
 ];
-var ward44Coords = [
+var district44Coords = [
   new google.maps.LatLng(41.93328000000001,-87.63038),
   new google.maps.LatLng(41.93363,-87.63033),
   new google.maps.LatLng(41.93395,-87.63064),
@@ -2995,7 +2998,7 @@ var ward44Coords = [
   new google.maps.LatLng(41.933049,-87.630708),
   new google.maps.LatLng(41.93328000000001,-87.63038)
 ];
-var ward45Coords = [
+var district45Coords = [
   new google.maps.LatLng(41.994202,-87.750893),
   new google.maps.LatLng(41.996961,-87.75675100000001),
   new google.maps.LatLng(41.995422,-87.75804900000001),
@@ -3081,7 +3084,7 @@ var ward45Coords = [
   new google.maps.LatLng(41.990291000000006,-87.751257),
   new google.maps.LatLng(41.994202,-87.750893)
 ];
-var ward46Coords = [
+var district46Coords = [
   new google.maps.LatLng(41.94703,-87.641373),
   new google.maps.LatLng(41.947844,-87.642124),
   new google.maps.LatLng(41.94802,-87.642124),
@@ -3177,7 +3180,7 @@ var ward46Coords = [
   new google.maps.LatLng(41.946855,-87.641995),
   new google.maps.LatLng(41.94703,-87.641373)
 ];
-var ward47Coords = [
+var district47Coords = [
   new google.maps.LatLng(41.97618500000001,-87.669654),
   new google.maps.LatLng(41.976086,-87.676456),
   new google.maps.LatLng(41.97473000000001,-87.676349),
@@ -3216,7 +3219,7 @@ var ward47Coords = [
   new google.maps.LatLng(41.968891,-87.669461),
   new google.maps.LatLng(41.97618500000001,-87.669654)
 ];
-var ward48Coords = [
+var district48Coords = [
   new google.maps.LatLng(41.97433,-87.66821),
   new google.maps.LatLng(41.97528,-87.6684),
   new google.maps.LatLng(41.975350000000006,-87.66474),
@@ -3290,7 +3293,7 @@ var ward48Coords = [
   new google.maps.LatLng(41.97439,-87.66961),
   new google.maps.LatLng(41.97433,-87.66821)
 ];
-var ward49Coords = [
+var district49Coords = [
   new google.maps.LatLng(42.02300600000001,-87.677057),
   new google.maps.LatLng(42.02189,-87.676316),
   new google.maps.LatLng(42.019371,-87.673119),
@@ -3364,7 +3367,7 @@ var ward49Coords = [
   new google.maps.LatLng(42.022942,-87.665073),
   new google.maps.LatLng(42.02300600000001,-87.677057)
 ];
-var ward50Coords = [
+var district50Coords = [
   new google.maps.LatLng(42.01954,-87.690189),
   new google.maps.LatLng(42.019158,-87.708879),
   new google.maps.LatLng(42.013419000000006,-87.70905),
@@ -3392,57 +3395,57 @@ var ward50Coords = [
   new google.maps.LatLng(42.01954,-87.690189)
 ];
 
-var wardCoordsArray = [
-  ward1Coords,
-  ward2Coords,
-  ward3Coords,
-  ward4Coords,
-  ward5Coords,
-  ward6Coords,
-  ward7Coords,
-  ward8Coords,
-  ward9Coords,
-  ward10Coords,
-  ward11Coords,
-  ward12Coords,
-  ward13Coords,
-  ward14Coords,
-  ward15Coords,
-  ward16Coords,
-  ward17Coords,
-  ward18Coords,
-  ward19Coords,
-  ward20Coords,
-  ward21Coords,
-  ward22Coords,
-  ward23Coords,
-  ward24Coords,
-  ward25Coords,
-  ward26Coords,
-  ward27Coords,
-  ward28Coords,
-  ward29Coords,
-  ward30Coords,
-  ward31Coords,
-  ward32Coords,
-  ward33Coords,
-  ward34Coords,
-  ward35Coords,
-  ward36Coords,
-  ward37Coords,
-  ward38Coords,
-  ward39Coords,
-  ward40Coords,
-  ward41Coords,
-  ward42Coords,
-  ward43Coords,
-  ward44Coords,
-  ward45Coords,
-  ward46Coords,
-  ward47Coords,
-  ward48Coords,
-  ward49Coords,
-  ward50Coords
+var districtCoordsArray = [
+  district1Coords,
+  district2Coords,
+  district3Coords,
+  district4Coords,
+  district5Coords,
+  district6Coords,
+  district7Coords,
+  district8Coords,
+  district9Coords,
+  district10Coords,
+  district11Coords,
+  district12Coords,
+  district13Coords,
+  district14Coords,
+  district15Coords,
+  district16Coords,
+  district17Coords,
+  district18Coords,
+  district19Coords,
+  district20Coords,
+  district21Coords,
+  district22Coords,
+  district23Coords,
+  district24Coords,
+  district25Coords,
+  district26Coords,
+  district27Coords,
+  district28Coords,
+  district29Coords,
+  district30Coords,
+  district31Coords,
+  district32Coords,
+  district33Coords,
+  district34Coords,
+  district35Coords,
+  district36Coords,
+  district37Coords,
+  district38Coords,
+  district39Coords,
+  district40Coords,
+  district41Coords,
+  district42Coords,
+  district43Coords,
+  district44Coords,
+  district45Coords,
+  district46Coords,
+  district47Coords,
+  district48Coords,
+  district49Coords,
+  district50Coords
 ];
 
 var famServArray = [
@@ -3763,7 +3766,7 @@ var avgStateArray = [
   203.48 // Ward 50
 ];
 
-var wardCenterCoordsArray = [
+var districtCenterCoordsArray = [
   new google.maps.LatLng(41.929007,-87.683782), // Ward 1
   new google.maps.LatLng(41.864422,-87.609589),
   new google.maps.LatLng(41.833185,-87.626099),

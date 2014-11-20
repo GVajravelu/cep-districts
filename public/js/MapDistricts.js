@@ -3,9 +3,9 @@ var highlightColor = "#E7B222";
 
 function initialize()
 {
-  var address = '61702';
+  //var address = '61702';
   var geocoder = new google.maps.Geocoder();
-  geocoder.geocode( { 'address': address}, function(results, status)
+  geocoder.geocode( { 'address': address}, function(results, status) // address in district coordinate js file
   {
     if (status == google.maps.GeocoderStatus.OK)
     {
@@ -36,7 +36,7 @@ function initialize()
       {
         center: results[0].geometry.location,
         //draggable: false,
-        zoom: 7,
+        zoom: mapZoom
         //minZoom: 11,
         //maxZoom: 11
       };
