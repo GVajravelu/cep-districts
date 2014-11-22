@@ -69,7 +69,7 @@ function initialize()
           });
           district.setMap(map);
 
-          var contentText = "<div id='universal'><h4>Ward " + (districtNum+1).toString() + "</h4>";
+          var contentText = "<div id='universal'><h4>" + districtNameArray[districtNum] + "</h4>";
           contentText += "Families served: " + famServArray[districtNum] + "<br/>";
           contentText += "Volunteers: " + volArray[districtNum] + "<br/>";
           contentText += "Total Federal Refund: " + numeral(totFedArray[districtNum]).format('$0,0.00') + "<br/>";
