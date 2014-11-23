@@ -45,6 +45,7 @@ function initialize()
       map.setMapTypeId('map_style');
 
       /* add CEP logo to the map */
+      /*
       var logoLatLng = new google.maps.LatLng(42.070000,-87.498163);
       var logoSrc = 'images/CEP_small_logo.gif';
       var logo = new google.maps.Marker({
@@ -52,6 +53,7 @@ function initialize()
         map: map,
         icon: logoSrc
       });
+      */
       /* end adding CEP logo to the map */
 
 
